@@ -1,0 +1,20 @@
+{
+  "name": "smtp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "go run ./cmd/server/main.go",
+    "build": "go build -o bin/server ./cmd/server/main.go",
+    "start": "./bin/server"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "nodemailer": "^7.0.6"
+  }
+}
