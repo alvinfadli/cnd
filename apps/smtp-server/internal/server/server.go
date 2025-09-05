@@ -75,7 +75,7 @@ func Start(cfg *config.Config) {
 
 	s := smtp.NewServer(be)
 
-	s.Addr = cfg.Domain + ":" + cfg.Port
+	s.Addr = ":" + cfg.Port
 	s.Domain = cfg.Domain
 	s.WriteTimeout = cfg.WriteTimeout
 	s.ReadTimeout = cfg.ReadTimeout
